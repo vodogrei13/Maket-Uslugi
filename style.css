@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 351.50px;
     height: 300px;
     background-color: rgb(237,237,237);
@@ -39,6 +39,7 @@
     margin: 0;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    padding-top: 1rem;
 }
 .dveri_img {
     width: 227px !important;
@@ -55,12 +56,14 @@
     height: 184.5px !important;
     object-fit: cover;
     overflow: hidden;
+    padding-bottom: 1rem;
 }
 .ras_img {
     width: 283.5px !important;
     height: 182px !important;
     object-fit: cover;
     overflow: hidden;
+    padding-bottom: 1rem;
 }
 .btn_dveri_kupe:hover .dveri_img {
     transform: scale(1.08);
