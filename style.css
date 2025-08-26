@@ -7,7 +7,13 @@
 .main {
     height: auto;
 }
-.btn_dveri_kupe {
+body {
+    font-family: Roboto, sans-serif;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.card__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,11 +33,12 @@
     margin: 0 auto;
     width: 85%;
     margin-top: 4rem;
+    margin-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 2rem;
 }
-.title {
+/* .title {
     color: rgba(59,60,67);
     font-size: 32px;
     font-family: "Roboto", sans-serif;
@@ -65,23 +72,23 @@
     overflow: hidden;
     padding-bottom: 1rem;
 }
-.btn_dveri_kupe:hover .dveri_img {
+.card__item:hover .dveri_img {
     transform: scale(1.08);
     transition: all 0.3s ease-in-out;
 }
-.btn_dveri_kupe:hover .kuh_img {
+.card__item:hover .kuh_img {
     transform: scale(1.08);
     transition: all 0.3s ease-in-out;
 }
-.btn_dveri_kupe:hover .fas_img {
+.card__item:hover .fas_img {
     transform: scale(1.08);
     transition: all 0.3s ease-in-out;
 }
-.btn_dveri_kupe:hover .ras_img {
+.card__item:hover .ras_img {
     transform: scale(1.08);
     transition: all 0.3s ease-in-out;
-}
-.btn_submit {
+} */
+/* .btn_submit {
     position: absolute;
     bottom: -50px;
     left: 50%;
@@ -97,60 +104,30 @@
     transition: all 0.3s ease-in-out;
     text-align: center;
     align-content: center;
-}
+} */
 
-.btn_dveri_kupe:hover .btn_submit {
+/* .card__item:hover .btn_submit {
     opacity: 1;
     bottom: 20px;
     background-color: rgba(59,60,67,0.7);
 }
-.btn_dveri_kupe:hover .btn_submit:hover {
+.card__item:hover .btn_submit:hover {
     background-color: rgba(59,60,67,0.9);
-}
-.btn_dveri_kupe:hover .text {
-    opacity: 1;
-}
-.dveri-2_img {
-    width: 102% !important;
-    height: 300px !important;
-    object-fit: cover;
-}
-.kuh-2_img {
-    width: 102% !important;
-    height: 300px !important;
-    object-fit: cover;
-    overflow: hidden;
-}
-.fas-2_img {
-    width: 102% !important;
-    height: 300px !important;
-    object-fit: cover;
-    overflow: hidden;
-}
-.ras-2_img {
+} */
+
+.image__item {
     width: 100% !important;
     height: 300px !important;
     object-fit: cover;
-    overflow: hidden;
     object-position: center;
 }
-.btn_dveri_kupe:hover .dveri-2_img {
-    filter: brightness(60%);
+
+.card__item:hover .image__item {
+    filter: brightness(50%);
     transition: 0.4s;
 }
-.btn_dveri_kupe:hover .kuh-2_img {
-    filter: brightness(60%);
-    transition: 0.4s;
-}
-.btn_dveri_kupe:hover .fas-2_img {
-    filter: brightness(60%);
-    transition: 0.4s;
-}
-.btn_dveri_kupe:hover .ras-2_img {
-    filter: brightness(60%);
-    transition: 0.4s;
-}
-.title-2 {
+
+.card__title {
     color: rgba(59,60,67);
     font-size: 31px;
     font-family: "Roboto", sans-serif;
@@ -164,13 +141,13 @@
     bottom: -18px;
     width: 100%;
     color: #fff;
-    height: 67px;
+    height:75px;
     background-color: rgba(59,60,67,0.7);
 }
-.btn_dveri_kupe:hover .title-2 {
+.card__item:hover .card__title {
     opacity: 0;
 }
-.text {
+.card__info {
     opacity: 0;
     font-size: 23px;
     position: absolute;
@@ -181,6 +158,10 @@
     text-align: start;
     color: #fff;
     transition: 0.3s;
+    text-align: center;
+}
+.card__item:hover .card__info {
+    opacity: 1;
 }
 .btn_submit-2 {
     position: absolute;
@@ -199,11 +180,98 @@
     text-align: center;
     align-content: center;
 }
-.btn_dveri_kupe:hover .btn_submit-2 {
+.card__item:hover .btn_submit-2 {
     opacity: 1;
     bottom: 20px;
     background-color: rgba(178,178,178,0.7);
 }
-.btn_dveri_kupe:hover .btn_submit-2:hover {
+.card__item:hover .btn_submit-2:hover {
     background-color: rgba(178,178,178,0.9);
+}
+
+/* Новый Header */
+.header {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    max-height: 107px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 8px 0px #ccc;
+    margin-bottom: 10px;
+}
+.header_logo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.image__logo {
+    width: 158px;
+    height: 80px;
+}
+.header_found {
+    margin-left: -50px;
+}
+.found__input {
+    width: 430px;
+    height: 64px;
+    border: none;
+    border-radius: 32px;
+    color: #3B3C43;
+    background-color: #E9E9E9;
+    padding: 0 20px 0 60px;
+    font-size: 16px; 
+    box-sizing: border-box;
+    background-image: url('./img/header/lupa.png');
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 24px 24px;
+}
+.found__input:focus {
+    outline: none;
+    transition: 0.3s;
+    background-color: #F3F3F3;
+    box-shadow: 0 0 0 2px #DDDDDD;
+}
+
+.found__input::placeholder {
+    color: #444;
+}
+
+.header__nav {
+    margin-left: -50px;
+}
+
+.header__nav_list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 69px;
+}
+.header__nav_item {
+    font-size: clamp(14px, 1.15vw , 50px);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header__nav_item:hover {
+    color: #E11F27;
+}
+
+.header__menu_icon {
+    display: flex;
+    gap: 22px;
+}
+.header__menu_icon_item {
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+    transition: filter 0.1s ease;
+}
+.header__menu_icon_item:hover {
+    filter: invert(25%) sepia(95%) saturate(5000%) hue-rotate(350deg);
 }

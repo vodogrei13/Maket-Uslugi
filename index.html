@@ -12,13 +12,32 @@
 <body>
     <div class="body">
         <div class="header">
-            <img src="header.png" alt="header" class="header_img">
+            <div class="header_logo">
+                <img src="./img/header/logo fdm.svg" alt="header" class="image__logo">
+            </div>
+            <div class="header_found">
+                <input type="text" placeholder="Поиск" class="found__input">
+            </div>
+            <div class="header__nav">
+                <ul class="header__nav_list">
+                    <li class="header__nav_item">Каталог</li>
+                    <li class="header__nav_item">Услуги</li>
+                    <li class="header__nav_item">Оплата и доставка</li>
+                    <li class="header__nav_item">Контакты</li>
+                </ul>
+            </div>
+            <div class="header__menu_icon">
+                <img src="./img/header/basket.svg" alt="Корзина" class="header__menu_icon_item">
+                <img src="./img/header/about.svg" alt="Профиль" class="header__menu_icon_item">
+                <img src="./img/header/phone.svg" alt="Звонок" class="header__menu_icon_item">
+                <img src="./img/header/help.svg" alt="Помощь" class="header__menu_icon_item">
+            </div>
         </div>
 
         <section class="main">
             <div class="block">
 
-            <button class="btn_dveri_kupe">
+            <!-- <button class="btn_dveri_kupe">
                 <h1 class="title">Двери-купе</h1>
                 <img src="dveri.png" alt="dveri" class="dveri_img">
                 <div class="btn_submit">
@@ -48,49 +67,57 @@
                 <div class="btn_submit">
                     Узнать больше
                 </div>
-            </button>
+            </button> -->
 
-            <button class="btn_dveri_kupe">
-                <img src="dveri-2.jpg" alt="dveri" class="dveri-2_img">
-                <h1 class="title-2">Двери-купе</h1>
-                <p class="text">Купе-Расчёт On-line!
+            <button class="card__item">
+                <img src="./img/dveri.png" alt="dveri" class="image__item">
+                <h1 class="card__title">Двери-купе</h1>
+                <p class="card__info">
+                    Купе-Расчёт On-line!
                     Выберите систему
-                    дверей-купе</p>
+                    дверей-купе
+                </p>
                 <div class="btn_submit-2">
                     Узнать больше
                 </div>
             </button>
 
-            <button class="btn_dveri_kupe">
-                <img src="kuh-2.jpg" alt="dveri" class="kuh-2_img">
-                <h1 class="title-2">Кухонные модули</h1>
-                <p class="text">Наша компания
+            <button class="card__item">
+                <img src="./img/kuhna.png" alt="кух.модули" class="image__item">
+                <h1 class="card__title">Кухонные модули</h1>
+                <p class="card__info">
+                    Наша компания
                     специализируется на
                     производстве кухонных
                     модулей различной
                     ложности - от стандартных
                     решений до эксклюзивных
                     проектов, созданных по
-                    индивидуальным чертежам</p>
+                    индивидуальным чертежам
+                </p>
                 <div class="btn_submit-2">
                     Узнать больше
                 </div>
             </button>
 
-            <button class="btn_dveri_kupe">
-                <img src="fas-2.jpg" alt="dveri" class="fas-2_img">
-                <h1 class="title-2">Фасады</h1>
-                <p class="text">Выберите вид или производителя фасадов
-                    Заполните бланк в нужных графах</p>
+            <button class="card__item">
+                <img src="./img/fasad.png" alt="Фасады" class="image__item">
+                <h1 class="card__title">Фасады</h1>
+                <p class="card__info">
+                    Выберите вид или производителя фасадов
+                    <br/>
+                    Заполните бланк в нужных графах
+                </p>
                 <div class="btn_submit-2">
                     Узнать больше
                 </div>
             </button>
 
-            <button class="btn_dveri_kupe">
-                <img src="ras-2.jpg" alt="dveri" class="ras-2_img">
-                <h1 class="title-2">Распил</h1>
-                <p class="text">Раскрой on-line – это
+            <button class="card__item">
+                <img src="./img/raspil.jpg" alt="Распил" class="image__item">
+                <h1 class="card__title">Распил</h1>
+                <p class="card__info">
+                    Раскрой on-line – это
                     современное средство
                     по раскрою материалов.
                     Он реализован в виде
@@ -101,13 +128,59 @@
                 </div>
             </button>
 
+            <button class="card__item">
+                <img src="./img/mod.png" alt="Мебель" class="image__item">
+                <h1 class="card__title">Мебель для мебельщика</h1>
+                <p class="card__info">
+                    Мебель для мебельщика
+                </p>
+                <div class="btn_submit-2">
+                    Узнать больше
+                </div>
+            </button>
+
+            <button class="card__item">
+                <img src="./img/countertops-3.png" alt="Столешница" class="image__item">
+                <h1 class="card__title">Изготовление столещниц</h1>
+                <p class="card__info">
+                    Изготовление столешниц — это процесс создания рабочих поверхностей из различных материалов
+                </p>
+                <div class="btn_submit-2">
+                    Узнать больше
+                </div>
+            </button>
+
+            <button class="card__item">
+                <img src="./img/plita.png" alt="Компакт плита" class="image__item">
+                <h1 class="card__title">Обработка компакт плиты</h1>
+                <p class="card__info">
+                    Обработка компакт-плиты (HPL Compact) включает раскрой, 
+                    фрезерование и сверление
+                </p>
+                <div class="btn_submit-2">
+                    Узнать больше
+                </div>
+            </button>
+
+            <button class="card__item">
+                <img src="./img/alv.png" alt="Алюмиевые витрины" class="image__item">
+                <h1 class="card__title">Алюминиевые витрины</h1>
+                <p class="card__info">
+                    Алюминиевые витрины для кухни — практичное решение, 
+                    которое сочетает прочность, 
+                    устойчивость к внешним воздействиям, 
+                    эстетику и лёгкость ухода
+                </p>
+                <div class="btn_submit-2">
+                    Узнать больше
+                </div>
+            </button>
             </div>
         </section>
 
         <div class="footer">
-            <img src="footer.png" alt="footer" class="footer_img">
+            <img src="./img/footer.png" alt="footer" class="footer_img">
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
