@@ -129,13 +129,13 @@ body {
 
 .card__title {
     color: rgba(59,60,67);
-    font-size: 31px;
+    font-size: 24px;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     text-align: center;
     align-content: center;
     margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     margin-bottom: 15px;
     position: absolute;
     bottom: -18px;
@@ -158,7 +158,6 @@ body {
     text-align: start;
     color: #fff;
     transition: 0.3s;
-    text-align: center;
 }
 .card__item:hover .card__info {
     opacity: 1;
@@ -266,12 +265,31 @@ body {
     display: flex;
     gap: 17px;
 }
+
 .header__menu_icon_item {
     width: 35px;
     height: auto;
     cursor: pointer;
     transition: filter 0.1s ease;
 }
+.header__menu_icon_item_basket {
+    width: 38px;
+    min-height: auto;
+    cursor: pointer;
+    transition: filter 0.1s ease;
+}
+.header__menu_icon_item_prof {
+    width: 35px;
+    max-height: 38px;
+    cursor: pointer;
+    transition: filter 0.1s ease;
+}
 .header__menu_icon_item:hover {
+    filter: invert(25%) sepia(95%) saturate(5000%) hue-rotate(350deg);
+}
+.header__menu_icon_item_prof:hover {
+    filter: invert(25%) sepia(95%) saturate(5000%) hue-rotate(350deg);
+}
+.header__menu_icon_item_basket:hover {
     filter: invert(25%) sepia(95%) saturate(5000%) hue-rotate(350deg);
 }
