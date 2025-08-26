@@ -263,6 +263,9 @@ body {
 
 .header__menu_icon {
     display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
     gap: 17px;
 }
 
